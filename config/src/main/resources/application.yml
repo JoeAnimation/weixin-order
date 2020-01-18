@@ -17,7 +17,7 @@ spring:
           uri: https://github.com/JoeAnimation/config-repo
           username: JoeAnimation
           password: lyx484520
-          basedir: F:\github\weixin-order\config\configuration
+          basedir: E:\java-training\configuration
   rabbitmq:
     host: 192.168.1.12
     username: joe
