@@ -1,0 +1,23 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka-server
+info:
+  build:
+    artifact: '@project.artifactId@'
+    description: '@project.description@'
+    groupId: '@project.groupId@'
+    name: '@project.name@'
+    version: '@project.version@'
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
